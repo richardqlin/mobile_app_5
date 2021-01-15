@@ -13,6 +13,8 @@ import {createStackNavigator } from 'react-navigation-stack';
 
 import DetailsScreen from './src/screens/DetailsScreen'
 
+import TabScreen from './src/screens/TabScreen';
+
 import styles from './src/styles/style'
 
 
@@ -58,7 +60,7 @@ const MainScreenNavigator = createAppContainer(createBottomTabNavigator ({
   
   
   Post: {
-  screen: HomeScreen,
+  screen: TabScreen,
   navigationOptions: {
   
   tabBarIcon: ( { focused , tintColor} ) => (
